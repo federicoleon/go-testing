@@ -2,6 +2,7 @@ package string_utils
 
 import (
 	"strings"
+	"fmt"
 )
 
 func isPalindrome(text string) bool {
@@ -21,5 +22,6 @@ func isPalindrome(text string) bool {
 }
 
 func IsPalindrome(text string) bool {
+	fmt.Println("keep calling strings utils library")
 	return isPalindrome(strings.Replace(text, " ", "", -1))
 }
